@@ -1,0 +1,48 @@
+{%extends 'testapp/base.html'%}
+{%block body_block%}
+<form class="" action="" method="post">
+  {%csrf_token%}
+ <h4>packageId<input type="text" name="packageId" value="{{form.packageId}}"></h4><br>
+<h4>packageName <input type="text" name="packageName" value="{{form.packageName}}"></h4><br>
+ <h4>commertial_model<input type="text" name="commertial_model" value="{{form.commertial_model}}"></h4><br>
+ <h4>contentType <input type="text" name="contentType" value="{{form.contentType}}"></h4><br>
+   <h4>coupansApplicable<input type="text" name="coupansApplicable" value="{{form.coupansApplicable}}"></h4><br>
+ <h4>startDate<input type="text" name="startDate" value="{{form.startDate}}"></h4><br>
+   <h4>endDate<input type="text" name="endDate" value="{{form.endDate}}"></h4><br>
+ <h4>duration<input type="text" name="duration" value="{{form.duration}}"></h4><br>
+   <h4>packDuration<input type="text" name="packDuration" value="{{form.packDuration}}"></h4><br>
+ <h4>packType<input type="text" name="packType" value="{{form.packType}}"></h4><br>
+ <h4>subscriptionType<input type="text" name="subscriptionType" value="{{form.subscriptionType}}"></h4><br>
+ <h4>packPremium<input type="text" name="packPremium" value="{{form.packPremium}}"></h4><br>
+   <h4>consumptionType<input type="text" name="consumptionType" value="{{form.consumptionType}}"></h4><br>
+ <h4>description<input type="text" name="description" value="{{form.description}}"></h4><br>
+   <h4>downloadType<input type="text" name="downloadType" value="{{form.downloadType}}"></h4><br>
+<h4>assetGroupId <input type="text" name="assetGroupId" value="{{form.assetGroupId}}"></h4><br>
+<h4>packDataValue<input type="text" name="packDataValue" value="{{form.packDataValue}}"></h4><br>
+<h4>network_type <input type="text" name="network_type" value="{{form.network_type}}"></h4><br>
+<h4>packageIndicator:<input type="text" name="packageIndicator" value="{{form.packageIndicator}}"></h4><br>
+<h4>packValidatyPeriod<input type="text" name="packValidatyPeriod" value="{{form.packValidatyPeriod}}"></h4><br>
+<h4>ParentPackId<input type="text" name="ParentPackId" value="{{form.ParentPackId}}"></h4><br>
+<h4>actionTobeTaken<input type="text" name="actionTobeTaken" value="{{form.actionTobeTaken}}"></h4><br>
+<h4>offerDescription<input type="text" name="offerDescription" value="{{form.offerDescription}}"></h4><br>
+<h4>activationReqLaunch<input type="text" name="activationReqLaunch" value="{{form.activationReqLaunch}}"></h4><br>
+<h4>partnerId<input type="text" name="partnerId" value="{{form.partnerId}}"></h4><br>
+<h4>imgUrl<input type="text" name="imgUrl" value="{{form.imgUrl}}"></h4><br>
+<h4>offerImgUrl<input type="text" name="offerImgUrl" value="{{form.offerImgUrl}}"></h4><br>
+<h4>unsubscription<input type="text" name="unsubscription" value="{{form.unsubscription}}"></h4><br>
+<h4>actionButtonText<input type="text" name="actionButtonText" value="{{form.actionButtonText}}"></h4><br>
+<h4>iosProductId<input type="text" name="iosProductId" value="{{form.iosProductId}}"></h4><br>
+<h4>autoSubscribe<input type="text" name="autoSubscribe" value="{{form.autoSubscribe}}"></h4><br>
+<h4>os<input type="text" name="os" value="{{form.os}}"></h4><br>
+<h4>packStatus<input type="text" name="packStatus" value="{{form.packStatus}}"></h4><br>
+<h4>targetAudience<input type="text" name="targetAudience" value="{{form.targetAudience}}"></h4><br>
+<h4>offerId<input type="text" name="offerId" value="{{form.offerId}}"></h4><br>
+<h4>unsubdescription<input type="text" name="unsubdescription" value="{{form.unsubdescription}}"></h4><br>
+<h4>cgSmsWifiEnabled<input type="text" name="cgSmsWifiEnabled" value="{{form.cgSmsWifiEnabled}}"></h4><br>
+
+
+
+
+<input type="submit" name="" value="update">
+</form>
+{%endblock%}

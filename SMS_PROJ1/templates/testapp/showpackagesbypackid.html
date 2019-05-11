@@ -1,0 +1,35 @@
+{%extends 'testapp/base.html'%}
+{%block body_block%}
+<table border="2">
+  <th>Name</th>
+  <th>Value</th>
+  <tr>
+    <td>packageId</td>
+    <td>{{packagedetails.packageId}}</td>
+    </tr>
+    <tr>
+    <td>packageName</td>
+    <td>{{packagedetails.commertial_model}}</td>
+    </tr>
+    <tr>
+    <td>contentType</td>
+    <td>{{packagedetails.contentType}}</td>
+    </tr>
+    <tr>
+      <td>commertial_model</td>
+    <td>{{packagedetails.commertial_model}}</td>
+    </tr>
+    <tr>
+    <td>subscriptionType</td>
+    <td>{{packagedetails.subscriptionType}}</td>
+    </tr>
+    <tr>
+    <td>packPremium</td>
+    <td>{{packagedetails.packPremium}}</td>
+    </tr>
+    <tr>
+    <td>assetGroupId</td>
+    <td>{{packagedetails.assetGroupId}}</td>
+   </tr>
+</table>
+{%endblock%}

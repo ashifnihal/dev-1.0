@@ -1,0 +1,24 @@
+
+
+{%extends 'testapp/base.html'%}
+{%block body_block%}
+<table border="2">
+  <thead>
+    <th>PackageId</th>
+    <th>PackageName</th>
+    <th>ShowDetails</th>
+    <th>UpdatePackage</th>
+    <th>DeletePackage</th>
+  </thead>
+  {%for package in packagedetails%}
+  <tr>
+    <td>{{package.packageId}}</td>
+    <td>{{package.packageName}}</td>
+    <td><a href="/MyplexSMS/ShowAllPackages/?packageId={{package.packageId}}">view_details</a></td>
+  <td><a href="/MyplexSMS/UpdatePackage/?packageId={{package.packageId}}">update_package</a></td>
+  <td><a href="/MyplexSMS/DeletePackage/?packageId={{package.packageId}}">delete_package</a></td>
+  </tr>
+  {%endfor%}
+</table>
+
+{%endblock%}
