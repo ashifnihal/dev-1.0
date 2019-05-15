@@ -108,7 +108,7 @@ def sms_deletepackage(request):
             qs=SMSPackageDetails.objects.get(packageId=id)
             data=qs.delete()
             print('@@deletedata',data)
-            return HttpResponse('record deleted Successfully..')
+            return HttpResponse('one record deleted Successfully..')
         except SMSPackageDetails.DoesNotExist:
             return HttpResponse('No records found for this ID...')
 
